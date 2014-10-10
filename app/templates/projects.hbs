@@ -1,2 +1,19 @@
-{{outlet}}
-<h4>Look at all my projects!</h4>
+<h1 class="text-center">some of my work</h1>
+
+<p class="text-center">Scroll away and browse unless you're interested
+  to find a particular technology:</p>
+{{ input value=desiredTech }}
+
+{{#each filteredProjects}}
+  <div class="project-wrap">
+    <div class="project-image-wrap">
+      <img {{bind-attr src=image }} >
+    </div>
+    <div class="project-details">
+      <h2 class="text-center">{{name}}</h2>
+      <div>{{subtitle}}</div>
+      <p>{{description}}</p>
+    </div>
+    <small>{{technologies}}</small>
+  </div
+{{/each}}
