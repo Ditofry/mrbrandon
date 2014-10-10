@@ -16,7 +16,7 @@ Project.reopenClass({
       name: 'Dotfolio',
       subtitle: 'Fully client-side application for large-scale art curation and project management',
       technologies: 'Ember.js, Ruby on Rails, Redis, Resque, Amazon S3, postgreSQL, Mandrill SMTP',
-      description: '',
+      description: 'This app replaced a plethora of legacy software programs and pen + paper methods for an art consultancy that needed to be able to search through a massive artist/artwork database, integrate that artwork with a cohesive project management system, and automate their purchase order and invoicing process.  Making extensive use of Ember and Ember data in conjunction with a Ruby on Rails API, manager users in the software are able to make liberal use of tags ,either creating them on the spot or selecting them from a type ahead, for categorizing artwork, artists and contacts.  Artwork, artists, and contacts can be filtered in realtime by changing one of numerous filter criteria, and the speed of search/filter responses has been optimized by tuning Active Record, and in some cases by hitting PostgreSQL directly and using the PostgreSQL JSON adapter to pre-format the JSON response to enable side-loading for Ember Data.  The services layer of the application which includes image processing and s3 uploading, email notifications, in-app notifications, and purchase order generation runs on a seperate worker using Resque to accomplish tasks and Redis to store the list of tasks with their description and priority level.',
       image: 'http://c0573862.cdn.cloudfiles.rackspacecloud.com/1/0/21463/871616/bob1.png',
       link: null
     },
