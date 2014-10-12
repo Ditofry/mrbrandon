@@ -162,20 +162,12 @@ nav
   height: 60px
   background: $gray
   z-index: 100
-  & * a
-    border-bottom: none
-    margin: 0 10px
-    &:hover, &:visited
+  #nav-links-container
+    margin: 0px auto
+    width: 500px
+    a
       border-bottom: none
-  & * h4
-    display: inline
-  .nav-wrap
-    position: absolute
-    top: 15px
-    &.left
-      left: 20px
-    &.right
-      right: 20px
+      margin: 0 23px
 
 img
   width: 100%
@@ -242,15 +234,17 @@ header
       width: 400px
       height: 320px
 
-.project-wrap
-  width: 100%
-  min-height: 100px
-  margin-bottom: 20px
-  overflow: hidden
-  .project-image-wrap
-    width: 30%
-    float: left
-  .project-details
-    width: 70%
-    padding-left: 15px
-    float: left
+.projects-container
+  margin: 50px 0
+  .project-wrap
+    width: 100%
+    min-height: 100px
+    margin-bottom: 20px
+    overflow: hidden
+    .project-image-wrap
+      width: 30%
+      float: left
+    .project-details
+      width: 70%
+      padding-left: 15px
+      float: left
