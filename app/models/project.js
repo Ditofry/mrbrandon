@@ -49,7 +49,14 @@ Project.reopenClass({
       id: 3,
       name: 'TBA game title, codename: Battleroome',
       subtitle: 'Browser-based HTML5 game with multi-player support',
-      features: [],
+      features: [
+        'Multi-instance, cross-dyno, multiplayer support with Redis publish/subscribe feature',
+        'Faye Wedboscket middleware orchestrates connections/disconnections to redis',
+        'In-game chat for trash talking',
+        'HTML5 Audio, Canvas tag',
+        'Small framework tailored to Battleroom that leverages websocket api to communicate game actions across the network',
+        'Enemy AI in single-player mode'
+      ],
       technologies: 'Impact.js, Sinatra.rb, Faye websocket middleware, redis',
       description: 'Stress release mechanism <strong>for</strong> the good staff at Cirro, <strong>featuring</strong> the good staff at Cirro.  The game is written in Javascript leveraging HTML5 for drawing and audio.  Websockets enable multi-player using pub/sub pattern backed by redis.  Features in-game chat, enemy AI, client-side interpolation to minimize data size and frequency of data transmission across the network, entity-based striking system that will allow more dynamic strike behaviour and animation as development goes forward.',
       image: 'http://c0573862.cdn.cloudfiles.rackspacecloud.com/1/0/21463/871616/bob1.png',
@@ -59,8 +66,12 @@ Project.reopenClass({
       id: 4,
       name: 'Denver Scholarship Foundation',
       subtitle: 'Large-scale customized CMS',
-      features: [],
-      technologies: 'PHP, Drupal, MySQL, jQuery, custom CMS theming, custom Module development',
+      features: [
+        'Custom Drupal7 module and theme development',
+        'Customized admin dashboard for managing large amounts of content',
+        'Drag and drop weight forms for organizing content'
+      ],
+      technologies: 'PHP, Drupal7, MySQL, jQuery, custom CMS theming, custom Module development',
       description: '',
       image: 'http://c0573862.cdn.cloudfiles.rackspacecloud.com/1/0/21463/871616/bob1.png',
       link: 'http://www.denverscholarship.org/'
@@ -69,7 +80,12 @@ Project.reopenClass({
       id: 5,
       name: 'Denver Scholarship Foundation Donations',
       subtitle: 'Donations portal for Denver Scholarship Foundation',
-      features: [],
+      features: [
+        'Ruby on Rails API supporting Ember JS front end',
+        'Support for monthly subscriptions and single donations via Stripe integration',
+        'Users can manage their own billing and subscription details',
+        'CSV Export tool for donation data'
+      ],
       technologies: 'Stripe Payments API, Ember, Ember Data, Ruby on Rails, PostgreSQL, Mandrill SMTP',
       description: '',
       image: 'http://c0573862.cdn.cloudfiles.rackspacecloud.com/1/0/21463/871616/bob1.png',
@@ -79,7 +95,12 @@ Project.reopenClass({
       id: 6,
       name: 'For Love and Lemons',
       subtitle: 'High traffic, high content fashion site catering to international audience',
-      features: [],
+      features: [
+        'Image processing via Image Magick and Image storage via Amazon S3',
+        'Drag and Drop ajax file uploads',
+        'Custom shopify subsite integration',
+        'Mailchimp and Mandrill integration for newsletter and notification emails'
+      ],
       technologies: 'Amazon S3, Ruby on Rails, HTML5 Drag and Drop, AJAX, Shopify Integration, Mandrill SMTP',
       description: '',
       image: 'http://c0573862.cdn.cloudfiles.rackspacecloud.com/1/0/21463/871616/bob1.png',
@@ -89,17 +110,12 @@ Project.reopenClass({
       id: 7,
       name: 'HappyEyes.js',
       subtitle: 'Google Chrome Plugin',
-      features: [],
+      features: [
+        'css3 keyframing',
+        'regexp dom parsing to find elements whose backgrounds need to change',
+        'tab-specific operating scope'
+      ],
       technologies: 'javascript, Google Chrome API',
-      description: '',
-      image: 'http://c0573862.cdn.cloudfiles.rackspacecloud.com/1/0/21463/871616/bob1.png',
-      link: ''
-    },
-    {
-      id: 8,
-      name: 'Ink Flow',
-      subtitle: 'Inventory management and process control application',
-      technologies: 'Ember, Ember Data, Ruby on Rails',
       description: '',
       image: 'http://c0573862.cdn.cloudfiles.rackspacecloud.com/1/0/21463/871616/bob1.png',
       link: ''
@@ -108,6 +124,11 @@ Project.reopenClass({
       id: 9,
       name: 'Great Work Inc.',
       subtitle: 'Information/registration site for an amazing and unique school',
+      features: [
+        'Full-screen looping vimeo player embed',
+        'Dynamic payment options via Amazon Simple Pay',
+        'Admin tools that enable control over layouts and display devices, enabling complete customization and the ability to re-arrange layouts without break cohesive design structure'
+      ],
       technologies: 'Amazon Simple Payments, Ruby on Rails, Vimeo, Amazon S3, Mandrill SMTP, PostgreSQL',
       description: '',
       image: 'http://c0573862.cdn.cloudfiles.rackspacecloud.com/1/0/21463/871616/bob1.png',
