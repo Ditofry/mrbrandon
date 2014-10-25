@@ -176,6 +176,9 @@ img
 .text-center
   text-align: center
 
+.white
+  color: white
+
 .clearfix:after
   visibility: hidden
   display: block
@@ -235,12 +238,16 @@ header
       height: 320px
 
 .projects-container
-  margin: 50px 0
+  margin: 50px auto 90px
+  width: 90%
+  max-width: 1400px
   .project-wrap
     width: 100%
     min-height: 100px
-    margin-bottom: 20px
+    margin: 20px 0px
+    border: 6px solid black
     overflow: hidden
+    padding: 10px
     .project-image-wrap
       width: 30%
       float: left
@@ -248,3 +255,39 @@ header
       width: 70%
       padding-left: 15px
       float: left
+      .project-resource-links
+        width: 100%
+        height: 110px
+        padding-top: 10px
+        .button-link
+          float: left
+          width: 90px
+          height: 90px
+          border-radius: 50% 50%
+          margin-left: 20px
+          a
+            border-bottom: none
+            padding-bottom: 0px
+            cursor: pointer
+            &:visited, &:hover
+              text-decoration: none
+              border-bottom: none
+              padding-bottom: 0px
+              cursor: pointer
+        .button-link-text
+          background-color: black
+          color: white
+          a
+            display: block
+            border-bottom: none
+            padding-bottom: 0px
+            background-color: #F1F1F1
+            cursor: pointer
+            position: relative
+            top: 32px
+            width: 90px
+            &:visited, &:hover
+              text-decoration: none
+              border-bottom: none
+              padding-bottom: 0px
+              cursor: pointer

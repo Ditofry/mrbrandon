@@ -14,9 +14,25 @@
       </div>
       <div class="project-details">
         <h2 class="text-center">{{name}}</h2>
-        <div>{{subtitle}}</div>
+        <div class="text-center">{{subtitle}}</div>
+        <ul class="project-features">
+          {{#each features}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+        <div class="project-resource-links">
+          {{#if github}}
+            <div class="button-link">
+              {{github-svg projectUrl=github}}
+            </div>
+          {{/if}}
+          {{#if web}}
+            <div class="button-link button-link-text text-center">
+              <a {{bindAttr href=web }}>visit</a>
+            </div>
+          {{/if}}
+        </div>
       </div>
-      <small>{{technologies}}</small>
     </div
   {{/each}}
 </div>

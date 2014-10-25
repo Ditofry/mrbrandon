@@ -9,6 +9,6 @@ export default Ember.ArrayController.extend({
 
     return projects.filter( function(project){
        return project.get('technologies').match(rx);
-    })
+    });
   }.property('desiredTech')
 });
