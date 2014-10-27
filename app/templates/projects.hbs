@@ -21,17 +21,18 @@
           {{/each}}
         </ul>
         <div class="project-resource-links">
-          {{#if github}}
-            <div class="button-link">
-              {{github-svg projectUrl=github}}
-            </div>
-          {{/if}}
           {{#if web}}
             <div class="button-link button-link-text text-center">
               <a {{bindAttr href=web }}>visit</a>
             </div>
           {{/if}}
+          {{#if github}}
+            <div class="button-link">
+              {{github-svg projectUrl=github}}
+            </div>
+          {{/if}}
         </div>
+        <div class="notes">{{note}}</div>
       </div>
     </div
   {{/each}}
