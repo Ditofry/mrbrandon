@@ -17,9 +17,10 @@ Tangram.reopenClass({
       id: 1,
       name: 'js',
       active: false,
-      description: 'yellow',
+      description: '',
       technologies: [],
-      coordinates: [0,9,6,0,15,6]
+      coordinates: [0,9,6,0,15,6],
+      color: 'yellow'
     },
     {
       id: 2,
@@ -27,7 +28,8 @@ Tangram.reopenClass({
       active: false,
       description: 'yellow',
       technologies: [],
-      coordinates: [0,9,15,6,16,24]
+      coordinates: [0,9,15,6,16,24],
+      color: 'blue'
     },
     {
       id: 3,
@@ -35,7 +37,8 @@ Tangram.reopenClass({
       active: false,
       description: 'yellow',
       technologies: [],
-      coordinates: [15,6,24,0,16,24]
+      coordinates: [15,6,24,0,16,24],
+      color: 'orange'
     },
     {
       id: 4,
@@ -43,7 +46,8 @@ Tangram.reopenClass({
       active: false,
       description: 'yellow',
       technologies: [],
-      coordinates: [24,0,30,9,16,24]
+      coordinates: [24,0,30,9,16,24],
+      color: 'white'
     },
     {
       id: 5,
@@ -51,7 +55,8 @@ Tangram.reopenClass({
       active: false,
       description: 'yellow',
       technologies: [],
-      coordinates: [15,6,30,9,16,24]
+      coordinates: [15,6,30,9,16,24],
+      color: 'red'
     }
   ]
 });
